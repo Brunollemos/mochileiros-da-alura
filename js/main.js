@@ -70,4 +70,9 @@ function botaoDeleta() {
 
 function deletaElemento(tag) {
     tag.remove();
+
+    itens.splice(
+        itens.findIndex((elemento) => elemento.id === id),
+        1
+    );
 }
