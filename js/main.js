@@ -24,7 +24,7 @@ form.addEventListener("submit", (evento) => {
         atualizaElemento(itemAtual);
         itens[existe.id] = itemAtual;
     } else {
-        itemAtual.id = itens.length;
+        itemAtual.id = itens[itens.length - 1] ? itens[itens.length - 1].id + 1 : 0;
 
         criaElemento(itemAtual);
 
